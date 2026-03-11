@@ -1,0 +1,10 @@
+﻿name: Aula DevOps - Workflow 01
+on: [push]
+jobs:
+  meu-primeiro-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+      - name: Executar script
+        run: echo "Workflow executado via PowerShell!"
